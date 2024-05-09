@@ -39,7 +39,7 @@ export const useBearStore = create<BearsState>()(
         bears: [{ id: 1, name: "Oso #1" }],
 
         totalBears: ()  => {
-                return get().blackBears + get().polarBears + get().pandaBears + get().bears.length;
+            return get().blackBears + get().polarBears + get().pandaBears + get().bears.length;
         },
 
 
